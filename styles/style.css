@@ -11,10 +11,6 @@ body {
     border-bottom: 2px solid #ff77a8; /* Pink border for emphasis */
 }
 
-.navbar-brand, .nav-link {
-    color: #00aaff; /* Light blue for links */
-}
-
 .navbar-brand:hover, .nav-link:hover {
     color: #ff77a8; /* Pink on hover */
     text-decoration: underline; /* Underline effect on hover */
