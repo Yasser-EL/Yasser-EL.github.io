@@ -32,7 +32,7 @@ body {
 .header h1 {
     font-size: 2.8em; /* Slightly larger font size */
     margin-bottom: 10px;
-    color: #ff77a8; /* Pink for header */
+    color: #00aaff; /* Blue for header */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
 }
 
@@ -51,7 +51,7 @@ body {
 
 .project h2 {
     margin-top: 0;
-    color: #ff77a8; /* Pink for project headers */
+    color: #00aaff; /* Blue for project headers */
 }
 
 .project p {
