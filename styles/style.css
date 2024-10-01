@@ -7,20 +7,12 @@ body {
 }
 
 .navbar {
-    background-color: #333333; /* Dark grey for navbar */
     border-bottom: 2px solid #ff77a8; /* Pink border for emphasis */
 }
 
 .navbar-brand:hover, .nav-link:hover {
     color: #ff77a8; /* Pink on hover */
     text-decoration: underline; /* Underline effect on hover */
-    animation: hoverEffect 0.3s ease-in-out; /* Hover animation */
-}
-
-/* Animation for hover effect */
-@keyframes hoverEffect {
-    0% { color: #00aaff; font-size: 1em; }
-    100% { color: #ff77a8; font-size: 1.05em; }
 }
 
 .header {
