@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Darker background for better contrast */
-    color: #ffffff; /* White text */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333333; /* Dark grey text */
     padding: 20px;
-    margin: 0; /* Reset margin for body */
+    margin: 0;
 }
 
 .navbar {
-    background-color: #1f1f1f; /* Darker grey for navbar */
+    background-color: #ffffff; /* White background for navbar */
     border-bottom: 2px solid #ff77a8; /* Pink border for emphasis */
 }
 
 .navbar-brand, .nav-link {
-    color: #00aaff; /* Light blue for links */
+    color: #007bff; /* Blue for links */
 }
 
 .navbar-brand:hover, .nav-link:hover {
@@ -23,52 +23,52 @@ body {
 .header {
     text-align: center;
     margin-bottom: 50px;
-    padding: 40px; /* Increased padding */
-    background-color: #2a2a2a; /* Dark grey background for header */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7); /* Enhanced shadow effect */
+    padding: 40px;
+    background-color: #ffffff; /* White background for header */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
 
 .header h1 {
-    font-size: 2.8em; /* Slightly larger font size */
+    font-size: 2.8em;
     margin-bottom: 10px;
-    color: #00aaff; /* Blue for header */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+    color: #007bff; /* Blue for header */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .header p {
-    font-size: 1.4em; /* Increased font size for better readability */
-    color: #cccccc; /* Light grey for header description */
+    font-size: 1.4em;
+    color: #666666; /* Lighter grey for description */
 }
 
 .project {
     padding: 20px;
-    background-color: #2a2a2a; /* Dark grey for projects */
+    background-color: #ffffff; /* White for projects */
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project h2 {
     margin-top: 0;
-    color: #00aaff; /* Blue for project headers */
+    color: #007bff; /* Blue for project headers */
 }
 
 .project p {
-    color: #cccccc; /* Light grey for project description */
+    color: #555555; /* Darker grey for project description */
 }
 
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #1f1f1f; /* Darker grey for footer */
-    color: #ffffff;
+    background-color: #f0f0f0; /* Light grey for footer */
+    color: #333333; /* Dark grey text */
     margin-top: 50px;
     border-top: 2px solid #ff77a8; /* Pink border for footer */
 }
 
 .social-icons a {
-    color: #00aaff; /* Light blue for social icons */
+    color: #007bff; /* Blue for social icons */
     margin: 0 10px;
     font-size: 1.5em;
 }
@@ -78,31 +78,32 @@ body {
 }
 
 a {
-    color: #00aaff; /* Light blue for links */
+    color: #007bff; /* Blue for links */
 }
 
 a:hover {
-    color: #ff77a8; /* Pink on link hover */
+    color: #ff77a8; /* Pink on hover */
 }
 
 .container {
-    max-width: 800px; /* Limiting the width for better readability */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Padding for the container */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .project-list {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .project-list li {
-    background-color: #333; /* Dark grey for list items */
-    margin: 10px 0; /* Margin between items */
-    padding: 15px; /* Padding for items */
-    border-radius: 5px; /* Rounded corners for items */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); /* Shadow effect for items */
+    background-color: #ffffff; /* White for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
+
 /* Fade-in effect for sections */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -116,8 +117,8 @@ a:hover {
 /* Hover effects for links and buttons */
 .navbar-brand:hover, .nav-link:hover {
     color: #ff77a8; /* Pink on hover */
-    text-decoration: underline; /* Underline effect on hover */
-    transform: scale(1.05); /* Slightly increase size */
+    text-decoration: underline;
+    transform: scale(1.05); /* Slight size increase */
 }
 
 .project {
@@ -125,43 +126,37 @@ a:hover {
 }
 
 .project:hover {
-    transform: scale(1.02); /* Slightly increase size */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    transform: scale(1.02); /* Slight size increase */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
 }
 
-/* Smooth scrolling for anchor links */
 html {
     scroll-behavior: smooth;
 }
 
-/* Additional animations for social icons */
 .social-icons a {
     transition: transform 0.3s ease;
 }
 
 .social-icons a:hover {
-    transform: scale(1.2); /* Slightly increase size on hover */
+    transform: scale(1.2); /* Size increase on hover */
 }
 
-/* Scroll animation styles */
 .scroll-fade {
-    opacity: 0; /* Start invisible */
-    transform: translateY(20px); /* Start from below */
+    opacity: 0;
+    transform: translateY(20px);
     visibility: hidden;
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for smooth effect */
-    will-change: opacity, visibility;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .scroll-fade.visible {
-    opacity: 1; /* Make visible */
-    transform: none; /* Move to original position */
+    opacity: 1;
+    transform: none;
     visibility: visible;
 }
 
 /* Enhanced hover effects for projects */
 .project:hover {
-    transform: scale(1.05); /* Slightly increase size */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
-
