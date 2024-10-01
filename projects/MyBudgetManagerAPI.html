@@ -1,1 +1,159 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyBudgetManager API - ASP.NET Web API Project">
+    <meta name="keywords" content="ASP.NET, REST API, MyBudgetManager API, Software Development, C#">
+    <title>MyBudgetManager API - Yasser EL ARABI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .project-details {
+            padding: 20px;
+            background-color: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project-details h2 {
+            margin-top: 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Yasser EL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>MyBudgetManager API</h1>
+        <p>ASP.NET Web API project for managing budget data.</p>
+    </header>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <h2>Overview</h2>
+        <p>The MyBudgetManager API is a RESTful API built with ASP.NET Web API. It serves as the backend for managing budget-related data, handling user accounts, transactions, and budget categories securely and efficiently. The API supports CRUD operations and integrates with both the mobile app and the admin desktop app.</p>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>ASP.NET Web API</li>
+            <li>C#</li>
+            <li>Entity Framework Core</li>
+            <li>SQL Server</li>
+            <li>JWT Authentication</li>
+            <li>AutoMapper</li>
+            <li>Data Annotations for Validation</li>
+        </ul>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>Secure user authentication using JWT tokens</li>
+            <li>CRUD operations for managing budgets, transactions, and categories</li>
+            <li>Data validation using Data Annotations</li>
+            <li>Integration with MyBudgetManager Mobile and Admin apps</li>
+            <li>Real-time data updates</li>
+        </ul>
+
+        <h2>Code Example</h2>
+        <pre><code>
+// Example: API Controller for handling budget data
+[Authorize]
+[ApiController]
+[Route("api/[controller]")]
+public class BudgetsController : ControllerBase
+{
+    private readonly IBudgetService _budgetService;
+
+    public BudgetsController(IBudgetService budgetService)
+    {
+        _budgetService = budgetService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetBudgets()
+    {
+        var budgets = await _budgetService.GetAllBudgetsAsync();
+        return Ok(budgets);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateBudget(BudgetDto budgetDto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var result = await _budgetService.CreateBudgetAsync(budgetDto);
+        return CreatedAtAction(nameof(GetBudgets), new { id = result.Id }, result);
+    }
+}
+        </code></pre>
+
+        <h2>GitHub Repository</h2>
+        <p>You can check out the source code for this project on <a href="https://github.com/Yasser-EL/MyBudgetManagerAPI" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Yasser EL ARABI. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
