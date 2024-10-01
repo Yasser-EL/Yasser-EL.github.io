@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212; /* Darker background for better contrast */
     color: #ffffff; /* White text */
-    margin: 0;
     padding: 20px;
+    margin: 0; /* Reset margin for body */
 }
 
 .navbar {
@@ -41,16 +41,21 @@ body {
     color: #cccccc; /* Light grey for header description */
 }
 
-.about-details, .contact-details, .project-details {
+.project {
     padding: 20px;
-    background-color: #2a2a2a; /* Dark grey for sections */
+    background-color: #2a2a2a; /* Dark grey for projects */
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-details h2, .contact-details h2, .project-details h2 {
-    color: #ff77a8; /* Pink for section headers */
+.project h2 {
+    margin-top: 0;
+    color: #ff77a8; /* Pink for project headers */
+}
+
+.project p {
+    color: #cccccc; /* Light grey for project description */
 }
 
 .footer {
@@ -60,6 +65,16 @@ body {
     color: #ffffff;
     margin-top: 50px;
     border-top: 2px solid #ff77a8; /* Pink border for footer */
+}
+
+.social-icons a {
+    color: #00aaff; /* Light blue for social icons */
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: #ff77a8; /* Pink on hover */
 }
 
 a {
