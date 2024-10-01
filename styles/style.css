@@ -151,3 +151,40 @@ html {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+        .logo {
+            font-family: 'Fira Code', monospace; /* Coder-like font */
+            font-size: 2rem; /* Adjust size to fit the navbar */
+            font-weight: bold;
+            position: relative;
+            color: #ff77a8; /* Pink for the main logo color */
+        }
+
+        .logo .dollar {
+            color: #00aaff; /* Light blue for $ */
+        }
+
+        .logo .curly-braces {
+            color: #ff77a8; /* Pink for curly braces */
+        }
+
+        .logo .curly-braces::before, .logo .curly-braces::after {
+            content: "{";
+            color: #ff77a8; /* Pink for opening curly brace */
+        }
+
+        .logo .curly-braces::after {
+            content: "}";
+        }
+
+        /* Optional animation for logo appearance */
+        .logo {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
