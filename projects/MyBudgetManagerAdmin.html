@@ -1,1 +1,138 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyBudgetManager Admin App - WPF Project">
+    <meta name="keywords" content="WPF, C#, Desktop App, MyBudgetManager, Software Development, Admin Panel">
+    <title>MyBudgetManager Admin App - Yasser EL ARABI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .project-details {
+            padding: 20px;
+            background-color: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project-details h2 {
+            margin-top: 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Yasser EL ARABI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>MyBudgetManager Admin App</h1>
+        <p>A desktop admin app for managing budgets and user data, built with C#/WPF.</p>
+    </header>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <h2>Overview</h2>
+        <p>The MyBudgetManager Admin App is a desktop application built using Windows Presentation Foundation (WPF) and C#. It allows administrators to manage budgets, view user activities, and generate reports. This tool is essential for back-office tasks and ensures smooth financial operations.</p>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>C#</li>
+            <li>WPF (Windows Presentation Foundation)</li>
+            <li>MVVM Architecture</li>
+            <li>SQL Server for Data Storage</li>
+            <li>REST API Integration (MyBudgetManager API)</li>
+        </ul>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>User management (CRUD operations)</li>
+            <li>Budget overview and detailed tracking</li>
+            <li>Real-time data synchronization with the MyBudgetManager API</li>
+            <li>Advanced reporting tools</li>
+            <li>Secure login and user roles management</li>
+        </ul>
+
+        <h2>Code Example</h2>
+        <pre><code>
+// Example: Fetching data from the MyBudgetManager API in C#
+public async Task<List<Budget>> FetchBudgetsAsync() {
+    using (HttpClient client = new HttpClient()) {
+        HttpResponseMessage response = await client.GetAsync("https://api.mybudgetmanager.com/budgets");
+        if (response.IsSuccessStatusCode) {
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<Budget>>(json);
+        }
+        return null;
+    }
+}
+        </code></pre>
+
+        <h2>GitHub Repository</h2>
+        <p>Check out the source code for this project on <a href="https://github.com/Yasser-EL/MyBudgetManagerAdmin" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Yasser EL ARABI. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
