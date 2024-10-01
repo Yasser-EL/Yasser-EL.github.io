@@ -4,6 +4,7 @@ body {
     color: #333333; /* Dark text */
     padding: 20px;
     margin: 0;
+    padding:0;
 }
 
 .navbar {
