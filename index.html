@@ -9,31 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
-
-    const elementInView = (el) => {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= window.innerHeight && rect.bottom >= 0
-        );
-    };
-
-    const displayScrollElement = (el) => {
-        el.classList.add('visible');
-    };
-
-    const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el)) {
-                displayScrollElement(el);
-            }
-        });
-    };
-
-    window.addEventListener('scroll', handleScrollAnimation);
-    window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
-</script>
 
 </head>
 <body>
@@ -99,6 +74,30 @@
         </div>
         <p>&copy; 2024 Yasser EL ARABI. All Rights Reserved.</p>
     </footer>
+<script>
+    const scrollElements = document.querySelectorAll('.scroll-fade');
 
+    const elementInView = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= window.innerHeight && rect.bottom >= 0
+        );
+    };
+
+    const displayScrollElement = (el) => {
+        el.classList.add('visible');
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el)) {
+                displayScrollElement(el);
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
+</script>
 </body>
 </html>
