@@ -66,6 +66,36 @@
     <footer class="footer scroll-fade">
         <p>&copy; 2024 Yasser EL ARABI. All Rights Reserved.</p>
     </footer>
+<script>
+    const scrollElements = document.querySelectorAll('.scroll-fade');
 
+    const elementInView = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= window.innerHeight && rect.bottom >= 0
+        );
+    };
+
+    const displayScrollElement = (el) => {
+        el.classList.add('visible');
+    };
+
+    const hideScrollElement = (el) => {
+            el.classList.remove('visible');
+        };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el)) {
+                displayScrollElement(el);
+            } else {
+                hideScrollElement(el);
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
+</script>
 </body>
 </html>
