@@ -8,81 +8,88 @@ body {
 
 .navbar {
     background-color: #ffffff; /* White background for navbar */
-    border-bottom: 2px solid #ff77a8; /* Pink border for emphasis */
+    border-bottom: 2px solid #ff77a8; /* Pink border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for navbar */
 }
 
 .navbar-brand, .nav-link {
-    color: #007bff; /* Blue for links */
+    color: #00aaff; /* Blue for navigation links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
 }
 
 .navbar-brand:hover, .nav-link:hover {
     color: #ff77a8; /* Pink on hover */
-    text-decoration: underline; /* Underline effect on hover */
+    transform: scale(1.05); /* Slight scale animation */
+    text-decoration: underline; /* Underline effect */
 }
 
 .header {
     text-align: center;
     margin-bottom: 50px;
     padding: 40px;
-    background-color: #ffffff; /* White background for header */
+    background-color: #333333; /* Dark grey background for header */
     border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    color: #ffffff; /* White text */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Light shadow */
 }
 
 .header h1 {
     font-size: 2.8em;
     margin-bottom: 10px;
-    color: #007bff; /* Blue for header */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: #00aaff; /* Blue for header text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow */
 }
 
 .header p {
     font-size: 1.4em;
-    color: #666666; /* Lighter grey for description */
+    color: #cccccc; /* Light grey for description */
 }
 
 .project {
     padding: 20px;
-    background-color: #ffffff; /* White for projects */
+    background-color: #ffffff; /* White background for projects */
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 .project h2 {
     margin-top: 0;
-    color: #007bff; /* Blue for project headers */
+    color: #00aaff; /* Blue for project headers */
 }
 
 .project p {
-    color: #555555; /* Darker grey for project description */
+    color: #666666; /* Medium grey for project description */
 }
 
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #f0f0f0; /* Light grey for footer */
-    color: #333333; /* Dark grey text */
+    background-color: #333333; /* Dark grey background for footer */
+    color: #ffffff;
     margin-top: 50px;
-    border-top: 2px solid #ff77a8; /* Pink border for footer */
+    border-top: 2px solid #ff77a8; /* Pink border */
 }
 
 .social-icons a {
-    color: #007bff; /* Blue for social icons */
+    color: #00aaff; /* Blue for social icons */
     margin: 0 10px;
     font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
 }
 
 .social-icons a:hover {
     color: #ff77a8; /* Pink on hover */
+    transform: rotate(15deg) scale(1.2); /* Rotation and scale animation */
 }
 
 a {
-    color: #007bff; /* Blue for links */
+    color: #00aaff; /* Blue for links */
 }
 
 a:hover {
     color: #ff77a8; /* Pink on hover */
+    text-decoration: underline;
 }
 
 .container {
@@ -97,51 +104,29 @@ a:hover {
 }
 
 .project-list li {
-    background-color: #ffffff; /* White for list items */
+    background-color: #ffffff; /* White background for list items */
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-/* Fade-in effect for sections */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.header, .project, .footer {
-    animation: fadeIn 0.8s ease forwards;
-}
-
-/* Hover effects for links and buttons */
-.navbar-brand:hover, .nav-link:hover {
-    color: #ff77a8; /* Pink on hover */
-    text-decoration: underline;
-    transform: scale(1.05); /* Slight size increase */
-}
-
+/* Hover effect for projects */
 .project {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-    transform: scale(1.02); /* Slight size increase */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+    transform: scale(1.05); /* Scale animation on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
+/* Smooth scrolling for anchor links */
 html {
     scroll-behavior: smooth;
 }
 
-.social-icons a {
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    transform: scale(1.2); /* Size increase on hover */
-}
-
+/* Scroll animation for fade-in */
 .scroll-fade {
     opacity: 0;
     transform: translateY(20px);
@@ -155,8 +140,15 @@ html {
     visibility: visible;
 }
 
-/* Enhanced hover effects for projects */
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+/* Hover effects for navigation links */
+.navbar-brand:hover, .nav-link:hover {
+    color: #ff77a8; /* Pink on hover */
+    transform: translateY(-5px); /* Small upward shift */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effects for social media icons */
+.social-icons a:hover {
+    transform: rotate(360deg) scale(1.2); /* Spin and scale on hover */
+    transition: transform 0.5s ease, color 0.3s ease; /* Smooth transition */
 }
