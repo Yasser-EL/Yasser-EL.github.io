@@ -9,55 +9,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <!--
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 20px;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .header p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        .project {
-            padding: 20px;
-            background-color: white;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .project h2 {
-            margin-top: 0;
-        }
-        .project p {
-            color: #555;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 50px;
-        }
-        .social-icons a {
-            color: #555;
-            margin: 0 10px;
-            font-size: 1.5em;
-        }
-        .social-icons a:hover {
-            color: #007bff;
-        }
-    </style> -->
+    <script>
+    const scrollElements = document.querySelectorAll('.scroll-fade');
+
+    const elementInView = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= window.innerHeight && rect.bottom >= 0
+        );
+    };
+
+    const displayScrollElement = (el) => {
+        el.classList.add('visible');
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el)) {
+                displayScrollElement(el);
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
+</script>
+
 </head>
 <body>
     <!-- Navigation Bar -->
