@@ -88,10 +88,16 @@
         el.classList.add('visible');
     };
 
+    const hideScrollElement = (el) => {
+            el.classList.remove('visible');
+        };
+
     const handleScrollAnimation = () => {
         scrollElements.forEach((el) => {
             if (elementInView(el)) {
                 displayScrollElement(el);
+            } else {
+                hideScrollElement(el);
             }
         });
     };
