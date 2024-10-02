@@ -79,7 +79,8 @@ a {
 }
 
 a:hover {
-    color: #ff77a8; /* Pink on hover */
+     color:white;
+    text-decoration: none;
 }
 
 .container {
@@ -197,7 +198,7 @@ html {
 }
 
 .resume-btn:hover {
-    box-shadow: 0 0 10px #ff77a8; /* Pink glow effect */
+    border-bottom: 5px solid #ff77a8; /* Pink border for emphasis */
     transform: scale(1.05); /* Slight increase in size on hover */
 }
 
