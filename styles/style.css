@@ -21,35 +21,6 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header p {
-    font-size: 1.4em;
-    color: #666666; /* Darker grey for description */
-}
-
-.project {
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
-
-.project h2 {
-    margin-top: 0;
-    color: #00aaff; /* Light blue for project headers */
-}
-
-.project p {
-    color: #666666; /* Darker grey for project description */
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333333; /* Dark grey for footer */
-    color: #ffffff;
-    margin-top: 50px;
-    border-top: 2px solid #ff77a8; /* Pink border */
-}
-
 .social-icons a {
     color: #00aaff; /* Light blue for social icons */
     margin: 0 10px;
@@ -93,11 +64,6 @@ a:hover {
 
 .header, .project, .footer {
     animation: fadeIn 0.8s ease forwards;
-}
-
-/* Hover effects for projects */
-.project {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
