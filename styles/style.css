@@ -68,10 +68,6 @@ body {
     transition: .3s ease-in-out;
 }
 
-a {
-    color: #00aaff; /* Light blue for links */
-}
-
 a:hover {
      color:white;
     text-decoration: none;
