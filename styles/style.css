@@ -5,10 +5,6 @@ body {
 }
 
 .navbar {
-    border-bottom: 2px solid #ff77a8; /* Pink border for emphasis */
-    position: sticky;
-    top: 0;
-    z-index: 10;
     padding: 0 5vw 0 5vw;
 }
 
