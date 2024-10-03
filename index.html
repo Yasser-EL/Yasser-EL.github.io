@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
-<body class="text-dark">
+<body class="bg-light text-dark">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom py-4 shadow-sm">
         <a class="navbar-brand" href="#">
@@ -20,11 +20,11 @@
                    <span class="dollar">$</span>"<span class="curly-braces">Y</span>";
             </div>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -42,18 +42,21 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="header scroll-fade visible text-center mb-5 p-5 rounded" style="display:flex;justify-content:center;align-items:center;">
-        <div style="width:50%;text-align:left;">
-        <h1 class="display-4 text-primary" style="font-weight:bold">
-            I develop backend
-            <span style="color:#666666">solutions that drive innovation and deliver results.</span>
-        </h1>
-        <!-- Intro Section -->
-        <p class="lead text-secondary">I'm Yasser EL ARABI, a software developer skilled in C#, ASP.NET Web API, Flutter, and WPF. Welcome to my portfolio!</p>
-        <a href="" download="" class="resume-btn bg-dark">My Resume</a>
+    <header class="text-center mb-5 p-5 bg-light rounded visible" style="display:flex;justify-content:center;align-items:center;">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-start">
+                <h1 class="display-4 text-primary" style="font-weight:bold">
+                    I develop backend
+                    <span style="color:#666666">solutions that drive innovation and deliver results.</span>
+                </h1>
+                <!-- Intro Section -->
+                <p class="lead text-secondary">I'm Yasser EL ARABI, a software developer skilled in C#, ASP.NET Web API, Flutter, and WPF. Welcome to my portfolio!</p>
+                <a href="" download="" class="resume-btn bg-dark">My Resume</a>
+            </div>
+            <div class="col-md-6">
+                <img src="images/portfolio_main_img.png" class="img-fluid">
+            </div>
         </div>
-        
-        <img src="images/portfolio_main_img.png" style="width:50%">
     </header>
 
 
