@@ -1,27 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MyBudgetManager Admin App - WPF Project">
     <meta name="keywords" content="WPF, C#, Desktop App, MyBudgetManager, Software Development, Admin Panel">
     <title>MyBudgetManager Admin App - Yasser EL ARABI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom py-4 shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom py-4 shadow-sm">
         <a class="navbar-brand" href="#">
-                         <div class="logo">
-                   <span class="dollar">$</span>"<span class="curly-braces">Y</span>";
+            <div class="logo">
+                <span class="dollar">$</span>"<span class="curly-braces">Y</span>";
             </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -29,8 +34,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="../projects.html">Projects</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../about.html">About</a>
@@ -43,36 +48,57 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="header">
-        <h1>MyBudgetManager Admin App</h1>
-        <p>A desktop admin app for managing budgets and user data, built with C#/WPF.</p>
+    <header class="text-center py-5 bg-light">
+        <h1 class="display-4 fw-bold">MyBudgetManager Admin App</h1>
+        <p class="lead text-muted">A comprehensive desktop solution for budget and user management, built with C#/WPF.
+        </p>
     </header>
 
     <!-- Project Details Section -->
-    <section class="project-details">
-        <h2>Overview</h2>
-        <p>The MyBudgetManager Admin App is a desktop application built using Windows Presentation Foundation (WPF) and C#. It allows administrators to manage budgets, view user activities, and generate reports. This tool is essential for back-office tasks and ensures smooth financial operations.</p>
+    <section class="container py-5">
+        <!-- Overview Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h5 fw-bold">Overview</h2>
+                <p>The MyBudgetManager Admin App is a desktop application developed with Windows Presentation Foundation
+                    (WPF) and C#. Designed for administrators, it provides efficient management of budgets, user data,
+                    and
+                    reporting tools, ensuring smooth financial operations. The app integrates seamlessly with the
+                    MyBudgetManager API for real-time data synchronization.</p>
+            </div>
+        </div>
 
-        <h2>Technologies Used</h2>
-        <ul>
-            <li>C#</li>
-            <li>WPF (Windows Presentation Foundation)</li>
-            <li>MVVM Architecture</li>
-            <li>SQL Server for Data Storage</li>
-            <li>REST API Integration (MyBudgetManager API)</li>
-        </ul>
+        <!-- Technologies Section -->
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4">
+                <h2 class="h5 fw-bold">Technologies Used</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">C#</li>
+                    <li class="list-group-item">WPF (Windows Presentation Foundation)</li>
+                    <li class="list-group-item">MVVM Architecture</li>
+                    <li class="list-group-item">SQL Server for Data Storage</li>
+                    <li class="list-group-item">REST API Integration (MyBudgetManager API)</li>
+                </ul>
+            </div>
 
-        <h2>Key Features</h2>
-        <ul>
-            <li>User management (CRUD operations)</li>
-            <li>Budget overview and detailed tracking</li>
-            <li>Real-time data synchronization with the MyBudgetManager API</li>
-            <li>Advanced reporting tools</li>
-            <li>Secure login and user roles management</li>
-        </ul>
+            <!-- Key Features Section -->
+            <div class="col-md-6 mb-4">
+                <h2 class="h5 fw-bold">Key Features</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">User management (CRUD operations)</li>
+                    <li class="list-group-item">Budget overview and detailed tracking</li>
+                    <li class="list-group-item">Real-time data synchronization with the MyBudgetManager API</li>
+                    <li class="list-group-item">Advanced reporting tools</li>
+                    <li class="list-group-item">Secure login and user roles management</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2>Code Example</h2>
-        <pre><code>
+        <!-- Code Example Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h5 fw-bold">Code Example</h2>
+                <pre><code>
 // Example: Fetching data from the MyBudgetManager API in C#
 public async Task<List<Budget>> FetchBudgetsAsync() {
     using (HttpClient client = new HttpClient()) {
@@ -84,19 +110,33 @@ public async Task<List<Budget>> FetchBudgetsAsync() {
         return null;
     }
 }
-        </code></pre>
+            </code></pre>
+            </div>
+        </div>
 
-        <h2>GitHub Repository</h2>
-        <p>Check out the source code for this project on <a href="https://github.com/Yasser-EL/MyBudgetManagerAdmin" target="_blank">GitHub</a>.</p>
+        <!-- GitHub Repository Section -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h5 fw-bold">GitHub Repository</h2>
+                <p>Explore the complete source code for this project on <a
+                        href="https://github.com/Yasser-EL/MyBudgetManagerAdmin" target="_blank"
+                        class="fw-bold">GitHub</a>.
+                </p>
+            </div>
+        </div>
     </section>
+
+
 
     <!-- Footer Section -->
     <footer class="footer text-center p-3 bg-dark text-white border-top">
         <p class="lead mb-0">Let’s Collaborate</p>
         <p>Feel free to connect with me for exciting new projects or job opportunities.</p>
         <div class="social-icons">
-            <a href="https://github.com/Yasser-EL" target="_blank" title="GitHub" class="text-primary mx-2 fs-3"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/yasser-el-arabi/" target="_blank" title="LinkedIn" class="text-primary mx-2 fs-3"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Yasser-EL" target="_blank" title="GitHub" class="text-primary mx-2 fs-3"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yasser-el-arabi/" target="_blank" title="LinkedIn"
+                class="text-primary mx-2 fs-3"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>&copy; 2024 Yasser EL ARABI. All Rights Reserved.</p>
     </footer>
@@ -105,36 +145,37 @@ public async Task<List<Budget>> FetchBudgetsAsync() {
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
+    <script>
+        const scrollElements = document.querySelectorAll('.scroll-fade');
 
-    const elementInView = (el) => {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= window.innerHeight && rect.bottom >= 0
-        );
-    };
+        const elementInView = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= window.innerHeight && rect.bottom >= 0
+            );
+        };
 
-    const displayScrollElement = (el) => {
-        el.classList.add('visible');
-    };
+        const displayScrollElement = (el) => {
+            el.classList.add('visible');
+        };
 
-    const hideScrollElement = (el) => {
+        const hideScrollElement = (el) => {
             el.classList.remove('visible');
         };
 
-    const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el)) {
-                displayScrollElement(el);
-            } else {
-                hideScrollElement(el);
-            }
-        });
-    };
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el)) {
+                    displayScrollElement(el);
+                } else {
+                    hideScrollElement(el);
+                }
+            });
+        };
 
-    window.addEventListener('scroll', handleScrollAnimation);
-    window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
-</script>
+        window.addEventListener('scroll', handleScrollAnimation);
+        window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
+    </script>
 </body>
+
 </html>

@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Yasser EL ARABI - Software Development Engineer">
     <meta name="keywords" content="Contact, C#, WPF, Flutter, ASP.NET, Software Development, Yasser EL">
     <title>Contact Me - Yasser EL ARABI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom py-4 shadow-sm">
         <a class="navbar-brand" href="#">
-                         <div class="logo">
-                   <span class="dollar">$</span>"<span class="curly-braces">Y</span>";
+            <div class="logo">
+                <span class="dollar">$</span>"<span class="curly-braces">Y</span>";
             </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
@@ -33,41 +41,79 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Header Section -->
-    <header class="header">
-        <h1>Contact Me</h1>
-        <p>I'd love to hear from you!</p>
+    <header class="text-center py-5 bg-light">
+        <h1 class="display-4 fw-bold">Contact Me</h1>
+        <p class="lead text-muted">I'd love to hear from you!</p>
     </header>
 
     <!-- Contact Details Section -->
-    <section class="contact-details">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions, feel free to reach out to me via any of the following methods:</p>
+    <section class="container py-5">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="h5 fw-bold">Get in Touch</h2>
+                <p class="text-muted">Feel free to reach out to me via any of the following methods:</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <!-- Email -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold">
+                            <i class="bi bi-envelope-fill"></i> Email
+                        </h3>
+                        <p>You can contact me at:</p>
+                        <a href="mailto:yasser.elarabi@outlook.com" class="btn btn-primary">Send Email</a>
+                    </div>
+                </div>
+            </div>
 
-        <h2>Email</h2>
-        <p>You can contact me at: <a href="mailto:yasser.elarabi@outlook.com">yasser.elarabi@outlook.com</a></p>
+            <!-- LinkedIn -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </h3>
+                        <p>Connect with me:</p>
+                        <a href="https://www.linkedin.com/in/yasser-el-arabi/" class="btn btn-primary"
+                            target="_blank">View
+                            LinkedIn</a>
+                    </div>
+                </div>
+            </div>
 
-        <h2>LinkedIn</h2>
-        <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/yasser-el-arabi/" target="_blank">LinkedIn Profile</a></p>
-
-        <h2>GitHub</h2>
-        <p>Check out my projects on GitHub: <a href="https://github.com/Yasser-EL" target="_blank">Yasser-EL on GitHub</a></p>
+            <!-- GitHub -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold">
+                            <i class="bi bi-github"></i> GitHub
+                        </h3>
+                        <p>Check out my projects:</p>
+                        <a href="https://github.com/Yasser-EL" class="btn btn-primary" target="_blank">Visit GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
 
     <!-- Footer Section -->
     <footer class="footer text-center p-3 bg-dark text-white border-top">
         <p class="lead mb-0">Let’s Collaborate</p>
         <p>Feel free to connect with me for exciting new projects or job opportunities.</p>
         <div class="social-icons">
-            <a href="https://github.com/Yasser-EL" target="_blank" title="GitHub" class="text-primary mx-2 fs-3"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/yasser-el-arabi/" target="_blank" title="LinkedIn" class="text-primary mx-2 fs-3"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Yasser-EL" target="_blank" title="GitHub" class="text-primary mx-2 fs-3"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yasser-el-arabi/" target="_blank" title="LinkedIn"
+                class="text-primary mx-2 fs-3"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>&copy; 2024 Yasser EL ARABI. All Rights Reserved.</p>
     </footer>
@@ -77,36 +123,37 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
+        const scrollElements = document.querySelectorAll('.scroll-fade');
 
-    const elementInView = (el) => {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= window.innerHeight && rect.bottom >= 0
-        );
-    };
+        const elementInView = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= window.innerHeight && rect.bottom >= 0
+            );
+        };
 
-    const displayScrollElement = (el) => {
-        el.classList.add('visible');
-    };
+        const displayScrollElement = (el) => {
+            el.classList.add('visible');
+        };
 
-    const hideScrollElement = (el) => {
+        const hideScrollElement = (el) => {
             el.classList.remove('visible');
         };
 
-    const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el)) {
-                displayScrollElement(el);
-            } else {
-                hideScrollElement(el);
-            }
-        });
-    };
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el)) {
+                    displayScrollElement(el);
+                } else {
+                    hideScrollElement(el);
+                }
+            });
+        };
 
-    window.addEventListener('scroll', handleScrollAnimation);
-    window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
-</script>
+        window.addEventListener('scroll', handleScrollAnimation);
+        window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
+    </script>
 
 </body>
+
 </html>

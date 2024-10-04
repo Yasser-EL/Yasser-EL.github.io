@@ -1,25 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MyBudgetManager API - ASP.NET Web API Project">
     <meta name="keywords" content="ASP.NET, REST API, MyBudgetManager API, Software Development, C#">
     <title>MyBudgetManager API - Yasser EL ARABI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom py-4 shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom py-4 shadow-sm">
         <a class="navbar-brand" href="#">
-                         <div class="logo">
-                   <span class="dollar">$</span>"<span class="curly-braces">Y</span>";
+            <div class="logo">
+                <span class="dollar">$</span>"<span class="curly-braces">Y</span>";
             </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -27,8 +32,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="../projects.html">Projects</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../about.html">About</a>
@@ -41,80 +46,113 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="header">
-        <h1>MyBudgetManager API</h1>
-        <p>ASP.NET Web API project for managing budget data.</p>
+    <header class="text-center py-5 bg-light">
+        <h1 class="display-4 fw-bold">MyBudgetManager API</h1>
+        <p class="lead text-muted">An ASP.NET Web API project for managing budget-related data and user accounts.</p>
     </header>
 
     <!-- Project Details Section -->
-    <section class="project-details">
-        <h2>Overview</h2>
-        <p>The MyBudgetManager API is a RESTful API built with ASP.NET Web API. It serves as the backend for managing budget-related data, handling user accounts, transactions, and budget categories securely and efficiently. The API supports CRUD operations and integrates with both the mobile app and the admin desktop app.</p>
+    <section class="container py-5">
+        <!-- Overview Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h5 fw-bold">Overview</h2>
+                <p>The MyBudgetManager API is a RESTful backend service built with ASP.NET Web API. It handles budget
+                    management, user authentication, transactions, and categories, while securely providing integration
+                    with
+                    the mobile and desktop admin apps. The API enables seamless CRUD operations, ensuring smooth
+                    interactions across platforms.</p>
+            </div>
+        </div>
 
-        <h2>Technologies Used</h2>
-        <ul>
-            <li>ASP.NET Web API</li>
-            <li>C#</li>
-            <li>Entity Framework Core</li>
-            <li>SQL Server</li>
-            <li>JWT Authentication</li>
-            <li>Data Annotations for Validation</li>
-        </ul>
+        <!-- Technologies Section -->
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4">
+                <h2 class="h5 fw-bold">Technologies Used</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">ASP.NET Web API</li>
+                    <li class="list-group-item">C#</li>
+                    <li class="list-group-item">Entity Framework Core</li>
+                    <li class="list-group-item">SQL Server</li>
+                    <li class="list-group-item">JWT Authentication</li>
+                    <li class="list-group-item">Data Annotations for Validation</li>
+                </ul>
+            </div>
 
-        <h2>Key Features</h2>
-        <ul>
-            <li>Secure user authentication using JWT tokens</li>
-            <li>CRUD operations for managing budgets, transactions, and categories</li>
-            <li>Data validation using Data Annotations</li>
-            <li>Integration with MyBudgetManager Mobile and Admin apps</li>
-            <li>Real-time data updates</li>
-        </ul>
+            <!-- Key Features Section -->
+            <div class="col-md-6 mb-4">
+                <h2 class="h5 fw-bold">Key Features</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Secure user authentication using JWT tokens</li>
+                    <li class="list-group-item">CRUD operations for budgets, transactions, and categories</li>
+                    <li class="list-group-item">Data validation using Data Annotations</li>
+                    <li class="list-group-item">Integration with MyBudgetManager Mobile and Admin apps</li>
+                    <li class="list-group-item">Real-time data updates</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2>Code Example</h2>
-        <pre><code>
-// Example: API Controller for handling budget data
-[Authorize]
-[ApiController]
-[Route("api/[controller]")]
-public class BudgetsController : ControllerBase
-{
-    private readonly IBudgetService _budgetService;
-
-    public BudgetsController(IBudgetService budgetService)
+        <!-- Code Example Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h5 fw-bold">Code Example</h2>
+                <pre><code>
+    // Example: API Controller for handling budget data
+    [Authorize]
+    [ApiController]
+    [Route("api/[controller]")]
+    public class BudgetsController : ControllerBase
     {
-        _budgetService = budgetService;
+        private readonly IBudgetService _budgetService;
+    
+        public BudgetsController(IBudgetService budgetService)
+        {
+            _budgetService = budgetService;
+        }
+    
+        [HttpGet]
+        public async Task<IActionResult> GetBudgets()
+        {
+            var budgets = await _budgetService.GetAllBudgetsAsync();
+            return Ok(budgets);
+        }
+    
+        [HttpPost]
+        public async Task<IActionResult> CreateBudget(BudgetDto budgetDto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+    
+            var result = await _budgetService.CreateBudgetAsync(budgetDto);
+            return CreatedAtAction(nameof(GetBudgets), new { id = result.Id }, result);
+        }
     }
+                </code></pre>
+            </div>
+        </div>
 
-    [HttpGet]
-    public async Task<IActionResult> GetBudgets()
-    {
-        var budgets = await _budgetService.GetAllBudgetsAsync();
-        return Ok(budgets);
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> CreateBudget(BudgetDto budgetDto)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
-
-        var result = await _budgetService.CreateBudgetAsync(budgetDto);
-        return CreatedAtAction(nameof(GetBudgets), new { id = result.Id }, result);
-    }
-}
-        </code></pre>
-
-        <h2>GitHub Repository</h2>
-        <p>You can check out the source code for this project on <a href="https://github.com/Yasser-EL/MyBudgetManagerAPI" target="_blank">GitHub</a>.</p>
+        <!-- GitHub Repository Section -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h5 fw-bold">GitHub Repository</h2>
+                <p>Explore the complete source code for this project on <a
+                        href="https://github.com/Yasser-EL/MyBudgetManagerAPI" target="_blank"
+                        class="fw-bold">GitHub</a>.
+                </p>
+            </div>
+        </div>
     </section>
+
 
     <!-- Footer Section -->
     <footer class="footer text-center p-3 bg-dark text-white border-top">
         <p class="lead mb-0">Let’s Collaborate</p>
         <p>Feel free to connect with me for exciting new projects or job opportunities.</p>
         <div class="social-icons">
-            <a href="https://github.com/Yasser-EL" target="_blank" title="GitHub" class="text-primary mx-2 fs-3"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/yasser-el-arabi/" target="_blank" title="LinkedIn" class="text-primary mx-2 fs-3"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Yasser-EL" target="_blank" title="GitHub" class="text-primary mx-2 fs-3"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yasser-el-arabi/" target="_blank" title="LinkedIn"
+                class="text-primary mx-2 fs-3"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>&copy; 2024 Yasser EL ARABI. All Rights Reserved.</p>
     </footer>
@@ -123,36 +161,37 @@ public class BudgetsController : ControllerBase
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    const scrollElements = document.querySelectorAll('.scroll-fade');
+    <script>
+        const scrollElements = document.querySelectorAll('.scroll-fade');
 
-    const elementInView = (el) => {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= window.innerHeight && rect.bottom >= 0
-        );
-    };
+        const elementInView = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= window.innerHeight && rect.bottom >= 0
+            );
+        };
 
-    const displayScrollElement = (el) => {
-        el.classList.add('visible');
-    };
+        const displayScrollElement = (el) => {
+            el.classList.add('visible');
+        };
 
-    const hideScrollElement = (el) => {
+        const hideScrollElement = (el) => {
             el.classList.remove('visible');
         };
 
-    const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el)) {
-                displayScrollElement(el);
-            } else {
-                hideScrollElement(el);
-            }
-        });
-    };
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el)) {
+                    displayScrollElement(el);
+                } else {
+                    hideScrollElement(el);
+                }
+            });
+        };
 
-    window.addEventListener('scroll', handleScrollAnimation);
-    window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
-</script>
+        window.addEventListener('scroll', handleScrollAnimation);
+        window.addEventListener('load', handleScrollAnimation); // Trigger on initial load
+    </script>
 </body>
+
 </html>
